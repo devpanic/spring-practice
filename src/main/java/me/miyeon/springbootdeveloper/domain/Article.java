@@ -26,7 +26,12 @@ public class Article {
     private String content;
 
     @Builder
-    public Article(String title, String content){
+    public Article(String title, String content) {
+        this.title = title;
+        this.content = content;
+    }
+
+    public void update(String title, String content) {
         this.title = title;
         this.content = content;
     }
